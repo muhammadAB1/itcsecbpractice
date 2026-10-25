@@ -1,0 +1,68 @@
+body {
+    background-color: lemonchiffon;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+input {
+    width: 80%;
+    height: 5%;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    width: 60%;
+    height: 10%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.fa-xmark {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.close {
+    display: none;
+}
+
+body:has(#close:checked) .parent {
+    display: none;
+}
+
+body:has(#close:checked) .close {
+    display: block;
+}
