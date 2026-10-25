@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    border: 2px solid grey;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profiles {
+
+    width: 100%;
+    display: flex;
+    height: 350px;
+}
+
+.profile1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-right: 2px solid black;
+}
+
+.profile2 {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
