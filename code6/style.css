@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.parent {
+    width: 400px;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 300px;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: 100px;
+}
+
+
+.top {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid black;
+}
